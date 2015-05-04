@@ -1,0 +1,22 @@
+<ion-view view-title="Crear un Post">
+  <ion-content>
+    <h1>Crea un Post</h1>
+
+    <form ng-submit="crearPost()">
+          <div class="list">
+            <label class="item item-input">
+              <span class="input-label">Titulo</span>
+              <input type="text" ng-model="postData.titulo">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Texto</span>
+              <input type="text" ng-model="postData.cuerpo">
+            </label>
+            <label class="item">
+              <button class="button button-block button-positive" type="submit">Crear Post</button>
+            </label>
+          </div>
+    </form>
+
+  </ion-content>
+</ion-view>
